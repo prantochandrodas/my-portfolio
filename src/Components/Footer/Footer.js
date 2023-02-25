@@ -9,10 +9,7 @@ const Footer = () => {
             <footer className="footer p-0 py-10 lg:p-10 text-base-content">
                     <div className='px-10 py-5'>
                         <span className="footer-title">Services</span>
-                        <a className="link link-hover">Branding</a>
-                        <a className="link link-hover">Design</a>
-                        <a className="link link-hover">Marketing</a>
-                        <a className="link link-hover">Advertisement</a>
+                        <p>Font-End Web Development</p>
                     </div>
                     <div className='px-10 py-5'>
                         <span className="footer-title">Company</span>
