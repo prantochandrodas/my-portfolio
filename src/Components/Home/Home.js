@@ -12,13 +12,13 @@ import Footer from '../Footer/Footer';
 const Home = () => {
     return (
         <div>
-            <Navbar></Navbar>
+         
             <Header></Header>
             <About></About>
             <Skills></Skills>
             <Projects></Projects>
             <Contact></Contact>
-            <Footer></Footer>
+         
         </div>
     );
 };

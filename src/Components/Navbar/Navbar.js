@@ -1,15 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 import resume from"../../resume/Pranto Das Front End Resume (1).pdf";
 const Navbar = () => {
     const menu=<>
-        <li className='lg:ml-5'>Home</li>
+       <Link to='/'> <li className='lg:ml-5'>Home</li></Link>
         <li className='lg:ml-5'>Contect</li>
     </>
 
     
     return (
         <div>
-            <div className="navbar bg-current">
+            <div className="navbar backc border-b">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -19,13 +21,13 @@ const Navbar = () => {
                            {menu}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl text-white">Pranto Das</a>
-                </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1 text-white">
+                    <div className="navbar-center hidden lg:flex">
+                    <ul className="menu menu-horizontal px-1">
                        {menu}
                     </ul>
                 </div>
+                </div>
+                
                 <div className="navbar-end">
                     <a className="btn" variant="contained" href={resume} download>Resume</a>
                 </div>

@@ -9,8 +9,8 @@ const About = () => {
             <h1 className='text-center my-10 text-3xl font-bold underline  underline-offset-4'>About Me</h1>
             <div className='lg:px-40 px-4'>
                 <div>
-                    <h1 className='text-2xl font-bold '>Pranto Das,Front-End Developer</h1>
-                    <p className='text-xl'>
+                    <h1 className='lg:text-2xl text-md font-bold '>Pranto Das,Front-End Developer</h1>
+                    <p className='lg:text-xl text-sm mt-2'>
                         I am Pranto Das. I am a passionate Front End Web  developer. I am a professional at creating websites with  React, Express.js and MongoDB. I am a  dedicated web developer. I have a goal to establish my career as a Front End Web Developer . I am very much  interested  in learning a new language of development .
                     </p>
                 </div>

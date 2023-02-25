@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import project from "../../src/Assets/project1.png";
 import project1 from '../../src/Assets/project2.png';
 import project2 from '../../src/Assets/project3.png';
@@ -7,7 +8,7 @@ const Projects = () => {
     return (
         <div>
             <h1 className='text-5xl text-center font-bold underline  underline-offset-4'>Projects</h1>
-            <div className='grid lg:grid-cols-3 w-[90%] mx-auto p-10 gap-10'>
+            <div className='grid lg:grid-cols-3 lg:w-[90%] w-[100%] mx-auto p-10 gap-10'>
                 <div className="card card-compact w-66 bg-base-100 shadow-xl">
                     <figure><img src={project} className="lg:h-[200px]" alt="Shoes" /></figure>
                     <div className="card-body">
@@ -15,6 +16,7 @@ const Projects = () => {
                         <p>Demo Service provider website.That is made width React, express.js, MongoDB.</p>
                         <div className="card-actions justify-end">
                            <a href="https://excellent-photography-client.web.app/"><button className="btn btn-primary">Live Site</button></a>
+                           <Link to="/projectOne/details"><button className="btn btn-primary">Details</button></Link>
                         </div>
                     </div>
                 </div>
@@ -25,6 +27,7 @@ const Projects = () => {
                         <p>Resale Ecommerce website made with React ,Express.js, MongoDB</p>
                         <div className="card-actions justify-end">
                            <a href="https://perfect-deal-3083b.web.app/"><button className="btn btn-primary">Live Site</button></a>
+                           <Link to="/projectTwo/details"><button className="btn btn-primary">Details</button></Link>
                         </div>
                     </div>
                 </div>
@@ -35,6 +38,7 @@ const Projects = () => {
                         <p>Simpel html, css, Bootstrap based website.</p>
                         <div className="card-actions justify-end">
                             <a href="https://prantochandrodas.github.io/learn-web-project/"><button className="btn btn-primary">Live Site</button></a>
+                            <Link to="/projectThree/details"><button className="btn btn-primary">Details</button></Link>
                         </div>
                     </div>
                 </div>
