@@ -1,11 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 import './Navbar.css';
 import resume from"../../resume/Pranto Das Front End Resume (1).pdf";
 const Navbar = () => {
     const menu=<>
-       <Link to='/'> <li className='lg:ml-5'>Home</li></Link>
-        <li className='lg:ml-5'>Contect</li>
+       <Link to='#Home'> <li className='lg:ml-5 text-lg font-[500]'>Home</li></Link>
+       <Link to='#Skills'> <li className='lg:ml-5 text-lg font-[500]'>Skills</li></Link>
+       <Link to='#About'> <li className='lg:ml-5 text-lg font-[500]'>About</li></Link>
+       <Link to='#Projects'> <li className='lg:ml-5 text-lg font-[500]'>Projects</li></Link>
+       <Link to='#Contact'> <li className='lg:ml-5 text-lg font-[500]'>Contact</li></Link>
     </>
 
     

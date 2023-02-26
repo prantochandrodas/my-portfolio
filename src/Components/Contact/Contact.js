@@ -1,9 +1,40 @@
-import React from 'react';
-import './Contact.css'
+import React, { useRef, useState } from 'react';
+import './Contact.css';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, IconName } from "react-icons/fa";
 const Contact = () => {
+  
+    const form = useRef();
+
+  const sendEmail = (e) => {
+
+    e.preventDefault();
+
+    emailjs.sendForm('service_dy9fpfh', 'template_v8r17qf', form.current, 'FqD8ZBIFTHtTxuI_O')
+      .then((result) => {
+      
+          console.log(result.text);
+          toast.success('Sucessfully Send', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+            
+      }, (error) => {
+        
+          console.log(error.text);
+      });
+  };
+ 
     return (
-        <div className='my-10'>
+        <div className='my-10' id='Contact'>
             <section className='contact'>
                 <div className='content'>
                     <h2>Contact Me</h2>
@@ -34,18 +65,18 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className='contactForm'>
-                            <form action="">
+                            <form  ref={form} onSubmit={sendEmail}>
                                 <h1>Send message</h1>
                                 <div className="inputBox">
-                                    <input type="text" name='' required/>
+                                    <input type="text"  name="name" required/>
                                     <span>Full Name</span>
                                 </div>
                                 <div className="inputBox">
-                                    <input type="email" name=''required/>
+                                    <input type="email" name="user_email" required/>
                                     <span>Email</span>
                                 </div>
                                 <div className="inputBox">
-                                    <textarea name="" id="" cols="20" rows="2" required></textarea>
+                                    <textarea name="message" id="" cols="20" rows="2" required></textarea>
                                     <span>Type Your Message...</span>
                                 </div>
                                 <div className="inputBox">
@@ -55,6 +86,7 @@ const Contact = () => {
                         </div>
                 </div>
             </section>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

@@ -6,8 +6,8 @@ import project2 from '../../src/Assets/project3.png';
 
 const Projects = () => {
     return (
-        <div>
-            <h1 className='text-5xl text-center font-bold underline  underline-offset-4'>Projects</h1>
+        <div id='Projects'>
+            <h1 className='text-3xl text-center font-[500] underline  underline-offset-4'>Projects</h1>
             <div className='grid lg:grid-cols-3 lg:w-[90%] w-[100%] mx-auto p-10 gap-10'>
                 <div className="card card-compact w-66 bg-base-100 shadow-xl">
                     <figure><img src={project} className="lg:h-[200px]" alt="Shoes" /></figure>

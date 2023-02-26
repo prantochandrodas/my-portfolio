@@ -5,8 +5,8 @@ import React from 'react';
 import myPhoto from "../../Assets/pranto.jpg";
 const About = () => {
     return (
-        <div className='lg:w-[90%] mx-auto'>
-            <h1 className='text-center my-10 text-3xl font-bold underline  underline-offset-4'>About Me</h1>
+        <div className='lg:w-[90%] mx-auto' id='About'>
+            <h1 className='text-center my-10 text-3xl font-[500] underline  underline-offset-4'>About Me</h1>
             <div className='lg:px-40 px-4'>
                 <div>
                     <h1 className='lg:text-2xl text-md font-bold '>Pranto Das,Front-End Developer</h1>

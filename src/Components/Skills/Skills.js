@@ -12,8 +12,8 @@ import { faReact } from '@fortawesome/free-brands-svg-icons';
 
 const Skills = () => {
     return (
-        <div className='my-20 lg:w-[90%] w-[100%] mx-auto p-10 lg:shadow-xl shadow-none'>
-            <h1 className='text-4xl font-bold'>Skills</h1>
+        <div id='Skills' className='my-20 lg:w-[90%] w-[100%] mx-auto p-10 lg:shadow-xl shadow-none'>
+            <h1 className='text-2xl font-[500]'>Skills</h1>
             <p className='text-xl text-center font-bold mt-10 underline  underline-offset-4'>Core Skills</p>
             <div className=' lg:flex my-10 justify-center'>
                 <div className='mx-4'>
