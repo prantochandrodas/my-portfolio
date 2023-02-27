@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import myPhoto from '../../Assets/pranto-removebg-preview.png';
-import resume from '../../resume/Pranto Das Front End Resume (1).pdf'
+import resume from '../../resume/Pranto Das Front End Developer Resume (3).pdf'
 const Header = () => {
     return (
         <div className='header' id='Home'>
