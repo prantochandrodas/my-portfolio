@@ -15,7 +15,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className='mt-10'>
-                        {/* <div className='flex items-center'>
+                    {/* <div className='flex items-center'>
                             <FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon>
                             <p className='text-xl ml-2'><span className='font-bold'>Location:</span> Dhaka, Bangladesh.</p>
                         </div>
@@ -23,13 +23,13 @@ const About = () => {
                             <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
                             <p className='text-xl ml-2'><span className='font-bold'>Email:</span> prantochandrodas@gmail.com</p>
                         </div> */}
-                        <div className='flex'>
-                            <a href="https://www.facebook.com/pranto.chandrodas.33/"><div className='text-3xl mr-2'><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></div></a>
-                            <a href="https://github.com/prantochandrodas"><div className='text-3xl mr-2'><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></div></a>
-                            <a href="https://www.linkedin.com/in/pranto-das08/"><div className='text-3xl mr-2'><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></div></a>
-                            <a href="https://twitter.com/Pranto51377097"><div className='text-3xl mr-2'><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></div></a>
-                        </div>
+                    <div className='flex'>
+                        <a href="https://www.facebook.com/pranto.chandrodas.33/"><div className='text-3xl mr-2'><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon></div></a>
+                        <a href="https://github.com/prantochandrodas"><div className='text-3xl mr-2'><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon></div></a>
+                        <a href="https://www.linkedin.com/in/pranto-das08/"><div className='text-3xl mr-2'><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon></div></a>
+                        <a href="https://twitter.com/Pranto51377097"><div className='text-3xl mr-2'><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon></div></a>
                     </div>
+                </div>
             </div>
         </div>
     );

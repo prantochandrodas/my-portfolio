@@ -1,0 +1,30 @@
+.animation {
+    transition: 5s;
+    animation-name:animate ;
+    animation-duration: 30s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode:forwards ;
+    animation-iteration-count:infinite ;
+    animation-play-state: running;
+    animation-timing-function: ease-in-out;
+}
+@keyframes animate{
+    0%{
+        background-image: url('../../Assets/banenr/banner1.jpg');
+    }
+    20%{
+        background-image: url('../../Assets/banenr/banner2.webp');
+    }
+    40%{
+        background-image: url('../../Assets/banenr/banner3.jpg');
+    }
+    60%{
+        background-image: url('../../Assets/banenr/banner4.jpg');
+    } 
+    80%{
+        background-image: url('../../Assets/banenr/banner5.jpeg');;
+    }
+    100%{
+        background-image: url('../../Assets/banenr/banner1.jpg');
+    } 
+}

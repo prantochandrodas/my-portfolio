@@ -12,8 +12,6 @@ import Footer from '../Footer/Footer';
 const Home = () => {
     return (
         <div>
-         
-            <Header></Header>
             <Skills></Skills>
             <Projects></Projects>
             <About></About>
