@@ -2,35 +2,52 @@ import { faFacebook, faGithub, faLinkedin, faTwitter } from '@fortawesome/free-b
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import project from "../../src/Assets/project1.png";
-import project1 from '../../src/Assets/project2.png';
-import project2 from '../../src/Assets/Capture.PNG';
-
+import project1 from "../../src/Assets/projects/project1.png";
+import project2 from '../../src/Assets/projects/project2.png';
+import project3 from '../../src/Assets/projects/project3.png';
+// import project from '../../src/Assets/project1/Capture.PNG';
+import './Projects.css'
 const Projects = () => {
     return (
-        <div id='Projects'>
-            <h1 className='text-3xl text-center font-[500] underline  underline-offset-4'>Projects</h1>
-            <div className='mt-4 flex w-[70%] mx-auto lg:shadow-2xl shadow-none p-10' align="center">
-            <img src={project2} alt="Project" className='w-[300px] h-[300px]' />
-                <div className='ml-4'>
-                    <h1 className='lg:text-2xl text-md font-bold text-left'>GoShop (simple Ecommerce website )</h1>
+        <div>
+            <h1 className='text-center text-xl font-semibold'>Projects</h1>
+            <div id='Projects' className='grid grid-col-1  lg:grid-cols-3 lg:w-[90%] w-[100%] mx-auto p-10 gap-10'>
+            <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div  style={{ backgroundImage: `url(${project1})`}} className="w-full bg-top hover:bg-bottom h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md firstprojectanimation"></div>
 
-                    <p className='lg:text-xl text-sm mt-2 text-left'>
-                        <span className='font-semibold'>About this site</span> :- This is a Ecommerce type Project . Made with React.js,Express.js,MongoDB,Firebase, MaterialUI.The main Features are Login and Signup with firebase with user role (Buyer,Seller).Product Add , Delete and Place Order .Add Product in watch later page.
-                    </p>
-                    <p className='lg:text-xl text-sm mt-2 text-left'>
-                       <span className='font-semibold'> Demo Account:</span>  <br />
-                        Email:pranto@gmail.com <br />
-                        Password:vuilagesi
-                    </p>
-                    
-                    <div className='mt-5 flex' align="left">
-                        <a href="https://goshopclient.web.app/" target={'_blank'}><button className='btn btn-info btn-sm'>See Live</button></a>
-                        <a href="https://github.com/prantochandrodas/new-goshop" target={'_blank'}><button className="btn btn-outline btn-accent btn-sm">Source Code</button></a>
+                <div className="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 className="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">perfect-deal</h3>
+
+                    <div className="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span className="font-bold text-gray-800 dark:text-gray-200">LiveSite</span>
+                        <a href="https://perfect-deal-3083b.web.app/" target='_blank'><button className="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">View</button></a>
                     </div>
                 </div>
             </div>
+            <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div style={{ backgroundImage: `url(${project2})`}} className="w-full bg-top hover:bg-bottom h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md firstprojectanimation"></div>
 
+                <div className="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 className="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">excellent-photography</h3>
+
+                    <div className="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span className="font-bold text-gray-800 dark:text-gray-200">LiveSite</span>
+                        <a href="https://excellent-photography-client.web.app/" target='_blank'><button className="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">View</button></a>
+                    </div>
+                </div>
+            </div>
+            <div className="flex flex-col items-center justify-center w-full max-w-sm mx-auto">
+                <div style={{ backgroundImage: `url(${project3})`}} className="w-full bg-top hover:bg-bottom h-64 bg-gray-300 bg-center bg-cover rounded-lg shadow-md firstprojectanimation"></div>
+                <div className="w-56 -mt-10 overflow-hidden bg-white rounded-lg shadow-lg md:w-64 dark:bg-gray-800">
+                    <h3 className="py-2 font-bold tracking-wide text-center text-gray-800 uppercase dark:text-white">GoShop</h3>
+
+                    <div className="flex items-center justify-between px-3 py-2 bg-gray-200 dark:bg-gray-700">
+                        <span className="font-bold text-gray-800 dark:text-gray-200">LiveSite</span>
+                        <button className="px-2 py-1 text-xs font-semibold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
             {/* <div className='grid lg:grid-cols-3 lg:w-[90%] w-[100%] mx-auto p-10 gap-10'>
                 <div className="card card-compact w-66 bg-base-100 shadow-xl">
                     <figure><img src={project2} className="lg:h-[200px]" alt="Shoes" /></figure>

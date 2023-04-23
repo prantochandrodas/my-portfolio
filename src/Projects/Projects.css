@@ -1,0 +1,33 @@
+.firstprojectanimation {
+    transition: 5s!important;
+    animation-name:animate !important;
+    animation-duration: 30s!important;
+    animation-direction: alternate-reverse!important;
+    animation-fill-mode:forwards !important;
+    animation-iteration-count:infinite !important;
+    animation-play-state: running!important;
+    animation-timing-function: ease-in-out!important;
+}
+/* .header {
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #1a2a6c);
+} */
+/* @keyframes firstprojectanimation{
+    0%{
+        background-image: url('../Assets/project1/Capture.PNG');
+    }
+    20%{
+        background-image: url('../Assets/project1/Capture2.PNG');
+    }
+    40%{
+        background-image: url('../Assets/project1/project1-1.PNG');
+    }
+    60%{
+        background-image: url('../Assets/project1/project1.PNG');
+    } 
+    80%{
+        background-image: url('../Assets/project1/project1-2.PNG');
+    }
+    100%{
+        background-image: url('../Assets/project1/Capture.PNG');
+    } 
+} */

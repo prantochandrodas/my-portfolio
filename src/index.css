@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+.NavSticky{
+    
+  background:linear-gradient(to right, #1a2a6c, #b21f1f, #1a2a6c);
+  z-index:2;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
 body {
+  background: linear-gradient(to right, #a4a0a0, #c1b7b7, #d28989);;
   margin: 0;
   font-family: 'Inter', sans-serif!important;
   -webkit-font-smoothing: antialiased;
