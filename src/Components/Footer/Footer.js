@@ -8,7 +8,7 @@ import  linkdin from '../../Assets/icon/linkedin.png';
 import  gmail from '../../Assets/icon/gmail.png';
 const Footer = () => {
     return (
-        <div className='header'>
+        <div className='bg-[#3B2F2F] '>
             <footer className="footer p-0 py-10 pb-4 lg:p-10">
                 <div className='px-10 py-5 text-white'>
                     <span className="footer-title">Services</span>

@@ -1,95 +1,46 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import icon1 from '../../Assets/Icon1.png';
-import icon2 from '../../Assets/Icon2.png';
-import icon3 from '../../Assets/Icon3.png';
-import icon4 from '../../Assets/Icon.4.png';
-import icon5 from '../../Assets/Icon.5.jpg';
-import icon6 from '../../Assets/Icon.7.jpg';
-import icon7 from '../../Assets/Icon.8.png';
-import icon8 from '../../Assets/Icon.9.png';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
+import html from '../../Assets/skills/Icon1.png'
+import css from '../../Assets/skills/Icon2.png'
+import bootstarp from '../../Assets/skills/Icon3.png'
+import tailwindcss from '../../Assets/skills/Icon.4.png'
+import express from '../../Assets/skills/Icon.8.png'
+import rea from '../../Assets/skills/Icon.7.jpg'
+import mongodb from '../../Assets/skills/Icon.9.png'
+import redux from '../../Assets/skills/redux-logo-landscape.png'
+import next from '../../Assets/skills/nextjs.png'
 
 const Skills = () => {
     return (
-        <div id='Skills' className='lg:my-20 lg:w-[90%] w-[100%] mx-auto p-10 lg:shadow-xl shadow-none'>
-            <h1 className='text-2xl font-[500]'>Skills</h1>
-            <p className='text-xl text-center font-bold mt-10 underline  underline-offset-4'>Core Skills</p>
-            <div className=' lg:flex my-10 justify-center'>
-                <div className='mx-4'>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary " style={{ "--value": 90 }}>90%</div>
-                    </div>
-                    <p className='text-xl text-center'>Html</p>
+        <div className='my-10'>
+            <h1 className='lg:w-[80%] mx-auto my-4 font-semibold text-xl'>Skills</h1>
+            <div className='lg:w-[80%] mx-auto grid lg:grid-cols-5 lg:gap-[30px]'>
+                <div className='p-2 lg:w-[140px]  border border-2 inline-block rounded-xl mx-4'>
+                    <img src={html} alt="html" className=' rounded-xl lg:w-[120px] lg:h-[100px]' />
                 </div>
-                <div className='mx-4 '>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary" style={{ "--value": 80 }}>80%</div>
-                    </div>
-                    <p className='text-xl text-center'>Css</p>
+                <div className='p-2 lg:w-[140px] border border-2 inline-block rounded-xl mx-4'>
+                    <img src={css} alt="html" className='lg:w-[120px] lg:h-[100px] rounded-xl' />
                 </div>
-                <div className='mx-4'>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary" style={{ "--value": 75 }}>75%</div>
-                    </div>
-                    <p className='text-xl text-center'>Bootstrap</p>
+                <div className='p-2 lg:w-[140px] border border-2 inline-block rounded-xl mx-4'>
+                    <img src={bootstarp} alt="html" className='lg:w-[120px] lg:h-[100px] rounded-xl' />
                 </div>
-                <div className='mx-4'>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary" style={{ "--value": 70 }}>70%</div>
-                    </div>
-                    <p className='text-xl text-center'>Tailwind</p>
+                <div className='p-2 lg:w-[140px] border border-2 inline-block rounded-xl mx-4'>
+                    <img src={tailwindcss} alt="html" className='lg:w-[120px] lg:h-[100px] rounded-xl' />
                 </div>
-                <div className='mx-4'>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary" style={{ "--value": 70 }}>70%</div>
-                    </div>
-                    <p className='text-xl text-center'>Javascript</p>
+                <div className='p-2 lg:w-[140px] border border-2 inline-block rounded-xl mx-4'>
+                    <img src={rea} alt="html" className='lg:w-[120px] lg:h-[100px] rounded-xl' />
                 </div>
-                <div className='mx-4'>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary" style={{ "--value": 80 }}>80%</div>
-                    </div>
-                    <p className='text-xl text-center'>ReactJs</p>
+                <div className='p-2 lg:w-[140px] border border-2 inline-block rounded-xl mx-4'>
+                    <img src={express} alt="html" className='lg:w-[120px] lg:h-[100px] rounded-xl' />
                 </div>
-                <div className='mx-4'>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary" style={{ "--value": 70 }}>70%</div>
-                    </div>
-                    <p className='text-xl text-center'>ExpressJs</p>
+                <div className='p-2 lg:w-[140px] border border-2 inline-block rounded-xl mx-4'>
+                    <img src={mongodb} alt="html" className='lg:w-[120px] lg:h-[100px] rounded-xl' />
                 </div>
-                <div className='mx-4'>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary" style={{ "--value": 60 }}>60%</div>
-                    </div>
-                    <p className='text-xl text-center'>MongoDB</p>
+                <div className='p-2 lg:w-[140px] border border-2 inline-block rounded-xl mx-4'>
+                    <img src={redux} alt="html" className='lg:w-[120px] lg:h-[100px] rounded-xl' />
                 </div>
-
-
-            </div>
-
-            <p className="text-xl text-center font-bold mt-10 underline  underline-offset-4">With familiar</p>
-            <div className=' lg:flex my-10 justify-center'>
-               
-                <div className='mx-4'>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary " style={{ "--value": 50 }}>50%</div>
-                    </div>
-                    <p className='text-xl text-center'>Php</p>
+                <div className='p-2 lg:w-[140px] border border-2 inline-block rounded-xl mx-4'>
+                    <img src={next} alt="html" className='lg:w-[120px] lg:h-[100px] rounded-xl' />
                 </div>
-                <div className='mx-4'>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary " style={{ "--value": 50 }}>50%</div>
-                    </div>
-                    <p className='text-xl text-center'>Laravel</p>
-                </div>
-                <div className='mx-4'>
-                    <div className='flex justify-center my-2'>
-                        <div className="radial-progress text-primary " style={{ "--value": 50 }}>50%</div>
-                    </div>
-                    <p className='text-xl text-center'>MySQL</p>
-                </div>
-
             </div>
         </div>
     );

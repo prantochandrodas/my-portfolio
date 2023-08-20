@@ -6,6 +6,7 @@ import Main from './Components/Main/Main';
 import ProjectOneDetails from './ProjectOneDetails/ProjectOneDetails';
 import ProjectTwoDetails from './Components/ProjectTwoDetails/ProjectTwoDetails';
 import ProjectThreeDetails from './Components/ProjectThreeDetails/ProjectThreeDetails';
+import NavbarDrawer from './Components/NavbarDrawer/NavbarDrawer';
 
 
 function App() {
@@ -29,14 +30,26 @@ function App() {
         {
           path:'/projectThree/details',
           element:<ProjectThreeDetails></ProjectThreeDetails>
+        },
+        {
+          path:'/dra',
+          element:<NavbarDrawer></NavbarDrawer>
         }
-
       ]
     }
 
   ]);
   return (
     <div className=''>
+       <div class="hero"> 
+   
+   <div class="cube"></div>
+   <div class="cube"></div>
+   <div class="cube"></div>
+   <div class="cube"></div>
+   <div class="cube"></div>
+   <div class="cube"></div>
+ </div>
      <RouterProvider router={router}></RouterProvider>
     </div>
   );
